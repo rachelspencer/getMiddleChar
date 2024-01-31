@@ -21,7 +21,25 @@
 
 // The middle character(s) of the word represented as a string.
 
-function getMiddle(s)
-{
-  //Code goes here!
-}
+function getMiddle(s) {
+    const wordArr = s.split("");
+
+    if (wordArr.length  <= 2) {
+        return wordArr.join("");
+    }; 
+
+    if (wordArr.length % 2 === 0) {
+        const arrNumLength = wordArr.length / 2 - 1;
+        return middleEven = wordArr.splice(arrNumLength, 2).join("");
+    };
+
+    if (wordArr.length % 2 === 1){
+        const arrNumLength = wordArr.length / 2;
+        return middleEven = wordArr.splice(arrNumLength, 1).join("");
+    };
+};
+
+console.log(getMiddle("t"))
+console.log(getMiddle("te"))
+console.log(getMiddle("testing"))
+console.log(getMiddle("middle"))
