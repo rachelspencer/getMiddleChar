@@ -27,11 +27,11 @@ function getMiddle(s) {
     if (wordArr.length  <= 2) {
         return wordArr.join("");
     } else if (wordArr.length % 2 === 0) {
-        const arrNumLength = wordArr.length / 2 - 1;
-        return middleEven = wordArr.splice(arrNumLength, 2).join("");
+        const numToSplit = wordArr.length / 2 - 1;
+        return middleEven = wordArr.splice(numToSplit, 2).join("");
     } else {
         const arrNumLength = wordArr.length / 2;
-        return middleEven = wordArr.splice(arrNumLength, 1).join("");
+        return numToSplit = wordArr.splice(numToSplit, 1).join("");
     };
 };
 
