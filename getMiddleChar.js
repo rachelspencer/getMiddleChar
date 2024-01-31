@@ -26,14 +26,10 @@ function getMiddle(s) {
 
     if (wordArr.length  <= 2) {
         return wordArr.join("");
-    }; 
-
-    if (wordArr.length % 2 === 0) {
+    } else if (wordArr.length % 2 === 0) {
         const arrNumLength = wordArr.length / 2 - 1;
         return middleEven = wordArr.splice(arrNumLength, 2).join("");
-    };
-
-    if (wordArr.length % 2 === 1){
+    } else {
         const arrNumLength = wordArr.length / 2;
         return middleEven = wordArr.splice(arrNumLength, 1).join("");
     };
